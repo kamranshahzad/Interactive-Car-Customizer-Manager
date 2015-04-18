@@ -1,0 +1,11 @@
+import com.darronschall.DynamicRegistration;
+
+// Assume there is an instance named square_mc on the stage
+var square_mc:MovieClip;
+
+// updated 7/28/05 - add the dynamic registration stuff at runtime to our square movieclip
+DynamicRegistration.initialize(square_mc);
+
+// The square_mc has an original registration at 0,0 so
+// let's change that to 10, 60 at runtime.
+square_mc.setRegistration(10, 60); 
